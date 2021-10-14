@@ -1,1 +1,87 @@
-Home Page Hitted
+{% extends 'story/base.html' %}
+{% block main_content %}
+    
+
+
+<form action="" method="post">
+    {% csrf_token %}
+    <div class="form-group">
+    <ol>
+        <li>
+            <p>WHAT IS YOUR DATE AND PLACE OF BIRTH? <input  type="text" name="" placeholder="date"> <input type="text"
+                    name="birthplace" placeholder="Birth Place" ></p>
+            <br>
+        </li>
+        <li>
+            <p>WHAT IS YOUR FULL GIVEN NAME?  <input type="text" name="fullname" placeholder="Your Full Name"></p>
+        </li>
+        <li>
+            <p>WHO SELECTED YOUR NAME?  <input type="text" name="selected_by" placeholder="ex. My mother"></p>
+        </li>
+
+
+        <li>
+            <p>WHY WERE YOU GIVEN THIS NAME?    <input type="text" name="why_named" placeholder="Name given by"></p>
+        </li>
+
+        <li>
+            <p>DID YOU HAVE A NICKNAME? How did you get it?    <input type="text" name="nickname" placeholder="Your Nickname"> <input type="text" name="nickname_why" placeholder="Who gave the nickname"></p>
+        </li>
+        <li>
+            <p>YOUR MOTHER’S FULL NAME the date and place of her birth  <input type="text" name="mother_name" placeholder="Mother's full name">
+                <input type="text" name="mother_birthdate" placeholder="Mother's birth date">
+                <input type="text" name="mother_birthplace" placeholder="Mother's Birthplace"></p>
+        </li>
+        <li>
+            <p>YOUR FATHER’S FULL NAME the date and place of his birth? <input type="text" name="father_name" placeholder="Father's full name">
+                <input type="text" name="father_birthdate" placeholder="Mother's birth date">
+                <input type="text" name="father_birthplace" placeholder="Mother's Birthplace">
+            </p>
+        </li>
+
+        <li>
+            <p>To complete my family, I have <input type="text" name="number_of_sib"> siblings.</p>
+        </li>
+
+        <li>
+            <p>THE NAMES OF YOUR SIBLINGS the dates and places of their births? <input type="text" name="siblings_names" placeholder="Names of your siblings">
+                <input type="text" name="siblings_birth_places" placeholder="Birthplaces of your siblings"></p>
+        </li>
+
+
+
+        <li>
+            <p>THE NAMES OF YOUR MATERNAL GRANDPARENTS the dates <input type="text" name="m_mother_name" placeholder="Maternal GrandMother Name">
+                <input type="text" name="m_mother_birthdate" placeholder="Maternal Grand Mother birthdate">
+                <input type="text" name="m_father_name" placeholder="Maternal Grand Father Name">
+                <input type="text" name="m_father_birthdate" placeholder="Maternal GrandFather Birthdate">
+            </p>
+        </li>
+
+        <li>
+            <p>THE NAMES OF YOUR PATERNAL GRANDPARENTS the dates <input type="text" name="f_mother_name" placeholder="PATERNAL GrandMother Name">
+                <input type="text" name="f_mother_birthdate" placeholder="PATERNAL Grand Mother birthdate">
+                <input type="text" name="f_father_name" placeholder="PATERNAL Grand Father Name">
+                <input type="text" name="f_father_birthdate" placeholder="PATERNAL GrandFather Birthdate"></p>
+        </li>
+
+
+        <li>
+            <p>THE NAMES OF YOUR SIBLINGS the dates and places of their births? <input type="text" name="siblings_names" placeholder="Names of your siblings">
+                <input type="text" name="siblings_birth_places" placeholder="Birthplaces of your siblings"></p>
+        </li>
+
+        <li>
+            <p>THE NAMES OF YOUR SIBLINGS the dates and places of their births? <input type="text" name="siblings_names" placeholder="Names of your siblings">
+                <input type="text" name="siblings_birth_places" placeholder="Birthplaces of your siblings"></p>
+        </li>
+    </ol>
+
+
+</div>
+<button type="submit">Submit</button>
+</form>
+
+
+
+{% endblock main_content %}
