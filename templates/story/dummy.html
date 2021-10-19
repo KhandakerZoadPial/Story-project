@@ -1,0 +1,8 @@
+{% for x in a %}
+<label > {{x.label}}</label>
+ {% for i in x.name %}
+ <input type="text" name="{{i.name}}" placeholder="{{i.place_holder}}">
+ {% endfor %}
+ <br>
+
+{% endfor %}
