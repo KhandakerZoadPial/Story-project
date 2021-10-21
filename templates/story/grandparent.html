@@ -1,0 +1,917 @@
+{% extends 'story/base.html' %}
+
+{% block main_content %}
+
+<form action="{% url 'male_story' %}" method="post">
+    {% csrf_token %}
+
+<h6> 1. WHAT IS YOUR DATE AND PLACE OF BIRTH?  </h6>
+I was born on the <input type="text" name="x1"> in <input type="text" name="x2">, a city in <input type="text" name="x3"> at <input type="text" name="x4"> hospital. 
+<hr>
+<h6>2. WHAT IS YOUR FULL GIVEN NAME?  </h6>
+My full name is <input type="text" name="x5">. <hr>
+
+<h6>3. WHO SELECTED YOUR NAME?  </h6>
+The people who decided on this name are <input type="text" name="x6">. <hr>
+<h6>
+4. WHY WERE YOU GIVEN THIS NAME?  </h6>
+I was named this way because<input type="text" name="x7">. <hr>
+
+<h6>
+5. DID YOU HAVE A NICKNAME? How did you get it?  </h6>
+Sometimes, I go by the nickname <input type="text" name="x8"> which I got from <input type="text" name="x9">. <hr>
+
+<h6>
+6. YOUR MOTHER’S FULL NAME the date and place of her birth </h6>
+I have a beautiful mother named <input type="text" name="x10">. She was born on <input type="text" name="x11"> in <input type="text" name="x12">. 
+The place she grew up in <input type="text" name="x13"> was lovely just like her.
+
+<h6>
+7. YOUR FATHER’S FULL NAME the date and place of his birth  </h6>
+Meanwhile, my father, <input type="text" name="x14">, was born on the <input type="text" name="x15">. He was raised in the city of <input type="text" name="x16">.
+
+
+<h6>8. THE NAMES OF YOUR SIBLINGS the dates and places of their births : </h6>
+To complete my family, I have <input type="text" name="x17"> siblings. 
+Their names are <input type="text" name="x18">. They were born in <input type="text" name="x19">. My mother gave birth to <input type="text" name="20"> on <input type="text" name="x21">.  On the other hand,
+<input type="text" name="x22"> was born on <input type="text" name="x23">.
+
+I have a beautiful/handsome sister/brother who goes by the name <input type="text" name="x24">. She/he was born on the <input type="text" name="x25"> in
+<input type="text" name="x26">. <hr>
+
+
+<h6>
+THE NAMES OF YOUR MATERNAL GRANDPARENTS the dates and places of their births </h6>
+My mother was raised well by her parents, <input type="text" name="x7"> and <input type="text" name="x27">. My grandmother was named <input type="text" name="x28">. Her birthday was on
+the <input type="text" name="x29">; whereas, my grandpa, <input type="text" name="x30">, was born on <input type="text" name="x31"> in the village of <input type="text" name="x32">.
+<hr>
+
+<h6>
+THE NAMES OF YOUR PATERNAL GRANDPARENTS the dates and places of their births: </h6>
+On my father’s side, I was blessed with the lives of my grandma, <input type="text" name="x33">, and my grandpa, <input type="text" name="x34">.
+Granny was born on <input type="text" name="x35"> in <input type="text" name="x36">. My grandfather’s birth date, however, was on <input type="text" name="x37">. His family
+gleefully welcomed him on this day in the city of <input type="text" name="x38">. <hr>
+
+
+<h6>
+YOUR WIFE’S FULL GIVEN NAME the date and place of her birth  </h6>
+I have the most gorgeous wife. She was named <input type="text" name="x39"> but I call her <input type="text" name="x40">. I am thankful that she was successfully given
+birth to on the<input type="text" name="x41"> in the wonderful city of <input type="text" name="x42">. <hr>
+<h6>
+WHAT ARE THE NAMES OF YOUR CHILDREN? the dates and places of their births: </h6>
+<input type="text" name="x43"> and I were blessed with <input type="text" name="x44"> children who we named as <input type="text" name="x45">. 
+<input type="text" name="x46"> was born on <input type="text" name="x47"> in <input type="text" name="x48">. On the other hand, <input type="text" name="x49">’s birthdate is on <input type="text" name="x50">. My wife gave
+birth to him/her in <input type="text" name="x51">. <hr>
+
+
+<h6>
+WHAT ARE THE NAMES OF YOUR GRANDCHILDREN? the dates and places of their births  </h6>
+Over the years, my children grew up and had their own kids, too. My adorable grandkids are named <input type="text" name="x580"> and <input type="text" name="x581">.
+The first one is born in <input type="text" name="x52"> on the <input type="text" name="x53">.
+<input type="text" name="x54"> was born on <input type="text" name="x55"> in the city of <input type="text" name="x55">. <hr>
+
+
+<h6>
+WHAT IS YOUR FAVORITE WAY TO SPEND A DAY OF LEISURE? </h6> 
+I spend most of my free time <input type="text" name="x56"> while drinking  <input type="text" name="x57">. <hr>
+
+<h6>
+WHAT SPORT DO YOU LIKE THE MOST? Why? </h6>
+My most favorite sport is <input type="text" name="x58"> because I think it is  <input type="text" name="x59">. <hr>
+
+<h6>
+WHAT IS YOUR FAVORITE VACATION SPOT? Why?   </h6>
+My go-to vacation spot is <input type="text" name="x61">. I find it <input type="text" name="x62">.  <hr>
+
+<h6>
+WHAT MEAL DO YOU MOST ENJOY? </h6>
+The meal that I enjoy the most is <input type="text" name="x63">. <hr>
+
+<h6>
+20.	DO YOU HAVE A FAVORITE SONG? Is there some association that makes this song special to you?  </h6>
+My favorite song is called <input type="text" name="x64">; it is sung by <input type="text" name="x65">. The reason why I love it is that it reminds me of
+<input type="text" name="x67">. <hr>
+
+<h6>
+21	WHAT ARE YOUR CURRENT AND PAST FAVORITE TELEVISION SHOWS? </h6>>
+Currently, my favorite television show is <input type="text" name="x68">. Back then, I really loved the series <input type="text" name="x69">. <hr>
+
+
+<h6>
+22	IS THERE A MOVIE YOU HAVE WATCHED REPEATEDLY BECAUSE YOU LIKE IT SO MUCH? What makes it so enjoyable?  </h6>
+I have watched the movie <input type="text" name="x70"> several times already and I never get tired of it because it is  <input type="text" name="x71">. <hr>
+
+<h6>
+23	WHAT HOBBIES OR ACTIVITIES DO YOU ENJOY MOST? </h6>>
+My hobbies are <input type="text" name="x72">, <input type="text" name="x73">, and <input type="text" name="x74">. On the weekends, I also <input type="text" name="x75"> with my <input type="text" name="x76">. <hr>
+
+
+<h6>
+24	WHAT KINDS OF SOCIAL GATHERINGS DO YOU ENJOY MOST? </h6>>
+The social gatherings that I usually enjoy are <input type="text" name="x77">. <hr>
+
+<h6>
+    25	WHAT IS YOUR GREATEST ABILITY OR TALENT? How have you used it throughout your life?  </h6>
+My greatest talent is <input type="text" name="x78">. I have used it in many ways throughout my life such as when I <input type="text" name="x79">. <hr>
+
+<h6>
+26	WHAT IS YOUR BEST CHARACTERISTIC? </h6>>
+The best characteristic that I love about myself is my <input type="text" name="x80">. <hr>
+
+<h6>
+27	IS THERE A CHARACTERISTIC YOU WISH YOU COULD CHANGE ABOUT YOURSELF?  </h6>
+Sometimes, I wish I could stop being <input type="text" name="x81">. <hr>
+
+
+<h6>
+28	DESCRIBE A TYPICAL DAY IN YOUR LIFE RIGHT NOW. </h6>>
+Currently, I am living a <input type="text" name="x81"> life here in <input type="text" name="x82"> with my <input type="text" name="x83">.
+On the weekdays, I spend most of my time <input type="text" name="x84">. By the end of the day, I would feel <input type="text" name="x85"> and <input type="text" name="x86">. <hr>
+
+
+<h6>
+The world is filled with wonder when you see it through the eyes of a child.  <br>
+29	DESCRIBE YOUR CHILDHOOD NEIGHBORHOOD </h6>
+I grew up in a <input type="text" name="x87"> neighborhood where I met various interesting people like <input type="text" name="x88">. 
+Remembering it, I can say that it was actually a <input type="text" name="x89"> place. <hr>
+
+<h6>
+30	DESCRIBE YOUR CHILDHOOD HOME </h6>
+My childhood home was <input type="text" name="x90">. I enjoyed all of the <input type="text" name="x91"> mornings and <input type="text" name="x92"> nights in it. The house was
+suitable for a family of <input type="text" name="x93"> people. My time there was <input type="text" name="x94">. <hr>
+
+
+<h6>
+31	WHAT WAS YOUR FAVORITE ROOM IN THIS HOME? What made it special?  </h6>>
+My favorite place in this <input type="text" name="x95"> house was the <input type="text" name="x96">. It had a special place in my heart because it <input type="text" name="x97">.
+
+<hr>
+
+
+<h6>
+32	WHAT CHORES DID YOU HAVE TO DO? </h6>
+When I was younger, I had to do chores like <input type="text" name="x98">. <hr>
+
+<h6>
+33	DID YOU GET AN ALLOWANCE? How much was it?  </h6>
+(<input type="text" name="x99">) I got a daily/weekly/monthly allowance worth <input type="text" name="x100">. <hr>
+
+
+<h6>
+    34	WHAT INDOOR ACTIVITY DID YOU MOST ENJOY? Why?  
+
+</h6>
+The indoor activity that I enjoyed the most was <input type="text" name="x101">. This was because <input type="text" name="x102">. <hr>
+
+<h6>35	WHAT WAS YOUR FAVORITE SPORT OR OUTDOOR ACTIVITY? 
+</h6>
+Back then, I really enjoyed <input type="text" name="x103"> outside the house.  <hr>
+
+<h6>
+    36	DID YOU HAVE ANY SPECIAL TALENTS AS A CHILD? What were they?  
+
+</h6>
+As a child, I was particularly skilled at <input type="text" name="x104">. <hr>
+
+
+<h6>
+    37	DO YOU REMEMBER ANY FAVORITE TOYS? 
+
+</h6>
+I also had some toys that cheered me up on sad days. These are <input type="text" name="x105">. <hr>
+
+
+<h6>38	DID YOU EVER HAVE A HIDEAWAY, CLUBHOUSE, OR OTHER SPECIAL PLACE THAT WAS “YOURS”? Describe this place.  
+</h6>
+I had a special place that I called “mine.” It was this <input type="text" name="x106"> space filled with <input type="text" name="x107">. I used to <input type="text" name="x108"> a lot when
+I stayed here. <hr>
+
+<h6>
+    39	WHAT WAS AN ESPECIALLY FUN OUTING FOR YOU AS A CHILD?  
+
+</h6>
+As a child, I always anticipated going out to <input type="text" name="x109">. <hr>
+
+
+<h6>
+    40	DID YOU ENJOY READING AS A BOY? If so, what did you like to read?  
+
+</h6>
+Being a boy, I <input type="text" name="x110"> not enjoy reading.
+(If yes) I liked collecting <input type="text" name="x111"> books! <hr>
+
+<h6>
+    41	DID YOU ATTEND CHURCH OR ANY RELIGIOUS SERVICE OF ANY KIND AS A YOUNG BOY? What are your earliest memories
+
+</h6>
+of this experience? <input type="text" name="x112">
+I lived in a <input type="text" name="x113"> (Religious/Non-Religious) family.
+(If religious). I attended a church called <input type="text" name="x114"> which was located in <input type="text" name="x115">. I remember the times when I <input type="text" name="x116">. <hr>
+
+<h6>42	WERE YOU BAPTIZED OR DEDICATED AS AN INFANT? Where? By whom?  
+
+</h6>
+
+I <input type="text" name="x117"> baptized or dedicated as an infant.
+(If baptized) As an infant, I was baptized by <input type="text" name="x118"> in <input type="text" name="x119">. My <input type="text" name="x120"> attended the celebration
+<hr>
+
+
+<h6>
+    43	WHAT CHILDHOOD EXPERIENCES DO YOU FEEL SHAPED YOU THE MOST? 
+
+</h6>
+Some of the childhood experiences that helped me become who I am right now are <input type="text" name="x121">. <hr>
+
+
+<h6>44	WHICH FRIENDS FROM YOUR CHILDHOOD DO YOU MOST REMEMBER? 
+</h6>
+I remember having a childhood friend named <input type="text" name="x122">. He/she was very <input type="text" name="x123"> and we had a <input type="text" name="x124"> time together.
+<hr>
+
+
+<h6>45	WHAT FROM YOUR CHILDHOOD ARE YOU MOST THANKFUL FOR? 
+</h6>
+From my childhood, I will be eternally grateful for the <input type="text" name="x125">. Because of it, I grew up to be a <input type="text" name="x126"> person.
+Family LIFE
+50	A family is a circle of love… formed by memories, filled with devotion.  <hr>
+
+
+<h6>
+    51	WHAT IS A FAVORITE MEMORY OF YOUR FATHER FROM YOUR CHILDHOOD? Why this memory? 
+
+</h6>
+My favorite memory with my dad was when <input type="text" name="x127">. This is a special event for me because <input type="text" name="x128">. <hr>
+
+
+<h6>
+    52	WHAT WAS YOUR FATHER’S ATTITUDE TOWARD LIFE? How did his attitude affect you? 
+
+</h6>
+My father’s insights on life and its adventures was <input type="text" name="x129">. This made me become more <input type="text" name="x130"> regarding my own life. 
+
+<h6>
+    53	WHAT DID YOU ENJOY DOING WITH YOUR FATHER?  
+
+</h6>
+My father and I used to <input type="text" name="x131"> together and I really enjoyed it because <input type="text" name="x132">. <hr>
+
+<h6>
+    54	IN WHAT WAYS ARE YOU LIKE YOUR FATHER? 
+
+</h6>
+I think I have grown up to be like my father when it comes to my <input type="text" name="x133">. I always think that I got this from him. <hr>
+
+<h6>
+    55	HOW WOULD YOU FINISH THIS SENTENCE? “One thing my dad always said was…”  
+
+</h6>
+One thing my dad always said was <input type="text" name="x134">. I believe that this is actually a great <input type="text" name="x135"> and it helped me
+establish myself. <hr>
+
+<h6>
+    56	WHAT WORK DID YOUR FATHER DO? Did it interest you?  
+</h6>
+My father worked as a/an <input type="text" name="x136">. This job piqued / did not pique my interest because <input type="text" name="x137">. <hr>
+
+<h6>
+    57	WHAT IS A FAVORITE MEMORY OF YOUR MOTHER FROM YOUR CHILDHOOD? Why this memory? 
+
+</h6>
+One of the most memorable things about my mother from when I was a little boy was how she <input type="text" name="x138">. This is because
+<input type="text" name="x139">. <hr>
+
+
+<h6>
+    58	WHAT WAS YOUR MOTHER’S ATTITUDE TOWARD LIFE?  How did her attitude affect you? 
+</h6>
+My mom always had a <input type="text" name="x140"> outlook towards life. This attitude of hers affected me in a way that I became more <input type="text" name="x141">.
+<hr>
+
+
+<h6>
+    59	IN WHAT WAYS ARE YOU LIKE YOUR MOTHER?  
+
+</h6>
+I am similar to her because she is <input type="text" name="x142"> just like me. My mother is the most <input type="text" name="x143"> woman I have ever met and I love her
+for it. <hr>
+
+<h6>
+    60	WHAT DID YOU ENJOY DOING WITH YOUR MOM?   
+
+</h6>
+Back when I was a child, I really liked <input type="text" name="x144"> with my mom. Until now, I still feel <input type="text" name="x145"> whenever I remember this.
+
+<hr>
+
+
+<h6>
+    61	WHAT WORK DID YOUR MOTHER DO? Did it interest you?  
+
+</h6>
+My mother’s occupation was <input type="text" name="x146">. This helped me decide on my future career because I found it <input type="text" name="x147"> how she
+<input type="text" name="x148">. <hr>
+
+<h6>
+    62	WHAT WERE YOUR FAMILY CIRCUMSTANCES WHEN YOU WERE GROWING UP? How did they affect you?  
+</h6>
+My family was <input type="text" name="x149">. We encountered problems such as <input type="text" name="x150"> and it was hard for me growing up. But
+I am now <input type="text" name="x151"> about my life. These circumstances have made me <input type="text" name="x152"> and <input type="text" name="x153">. <hr>
+
+<h6>
+    63	WHAT RESPONSIBILITIES DID YOUR PARENTS REQUIRE OF YOU AS YOU WERE GROWING UP?   
+
+
+</h6>
+As I was growing up, my parents requested that I <input type="text" name="x154">. <hr>
+
+<h6>
+    64	HAS THAT INFLUENCED YOU IN THE WAY YOU’VE RAISED YOUR CHILDREN?  
+
+
+</h6>
+This formed my mindset regarding parenting. In complete honesty, I actually require my children to <input type="text" name="x155">, similar to /
+different from the obligations I had as a kid. <hr>
+
+<h6>
+    65	WHAT TALENTS, ABILITIES OR QUALITIES DID YOUR PARENTS NURTURE IN YOU? 
+</h6>
+Some of the qualities that my parents nurtured in me are my characteristics of being <input type="text" name="x156"> and <input type="text" name="x157">. I am thankful for these.
+<hr>
+
+
+<h6>
+    66	WHAT KIND OF PERSON DID YOUR PARENTS ENCOURAGE YOU TO BE? 
+
+</h6>
+My parents always told me to be a <input type="text" name="x158"> person. Of course, I valued their encouragement because I loved them. <hr>
+
+
+<h6>
+    67	 IF YOU HAVE SIBLINGS, LIST ANY SPECIAL MEMORIES THAT YOU HAVE OF EACH OF THEM. 
+</h6>
+I also loved my siblings/sister/brother so much. My fondest memories of them/him/her was that time when <input type="text" name="x159">.  <hr>
+
+68	WHAT MISCHIEVOUS THINGS DID YOU DO WITH YOUR SIBLINGS…OR TO THEM?   
+Of course, being young means you get to enjoy the beauty of life without heavily thinking of the consequences. I played around with my
+siblings/brother/sister and we used to <input type="text" name="x160">. It was funny for me back then but looking back, I think <input type="text" name="x161">.
+69	HOW DID YOU AND YOUR SIBLINGS GET ALONG?  
+My siblings/brother/sister and I were <input type="text" name="x162">. We had <input type="text" name="x163"> days together.
+70	WHEN YOU WERE GROWING UP, DID YOU HAVE ANY PETS?  
+In addition to our lovely family, we had a pet <input type="text" name="x164">   / pets named <input type="text" name="x165">. He/she/they were adorable! 
+71	WHAT DID YOU MOST ENJOY ABOUT HAVING A PET? 
+The thing I loved most about having <input type="text" name="x166"> growing up with me was <input type="text" name="x167">. I loved <input type="text" name="x168"> with <input type="text" name="x169">!
+72	WHAT DID YOUR FAMILY MOST ENJOY DOING TOGETHER?  
+On regular days, my family <input type="text" name="x170"> together. In the summer, we would often go <input type="text" name="x171">. But most especially,
+we loved spending time together, either by <input type="text" name="x172"> or <input type="text" name="x173">.
+73	WHAT ARE YOUR EARLY MEMORIES OF YOUR GRANDPARENTS?  
+My early memories of my grandparents was how they <input type="text" name="x174">. My grandma would always <input type="text" name="x175"> while my grandpa <input type="text" name="x176">.
+
+74	WHERE DID THEY LIVE?  
+They lived in a lovely place in <input type="text" name="x177">. Around their area, there were many <input type="text" name="x178">. It was a <input type="text" name="x179"> neighborhood.
+75	WHAT KIND OF WORK DID THEY DO? 
+My grandmother worked as a <input type="text" name="x180"> and my grandpa did some <input type="text" name="x181"> job.
+
+76	WHAT DO YOU REMEMBER ABOUT GOING TO VISIT THEM OR ABOUT THEM VISITING YOU?  
+Whenever my family visited them / whenever they visited us, I remember that we always had an amazing time together. My grandma and
+grandpa prepares a delicious meal for us. Their <input type="text" name="x182"> was my favorite!
+
+77	WHAT DID YOU ENJOY MOST ABOUT YOUR GRANDPARENTS?   
+I loved being with my grandparents because they were <input type="text" name="x183">. I always watched them <input type="text" name="x184"> . They cared for me and my
+siblings/brother/sister. 
+78	WHAT IS ONE VALUABLE LESSON YOU LEARNED FROM THEM?  
+A valuable lesson that I learned from being with them was that <input type="text" name="x185">. Aside from this, I was also inspired by them to be a <input type="text" name="x186">
+person.
+79	WHAT MEMORIES OR KNOWLEDGE DO YOU HAVE ABOUT YOUR GREAT-GRANDPARENTS?  
+The only things I remember about my great-grandparents are that they <input type="text" name="x187">.
+80	WHAT DO YOU KNOW ABOUT YOUR ANCESTORS’ ETHNIC OR NATIONAL ORIGINS?  
+I believe that my ancestors were <input type="text" name="x188"> and that I might have a/an <input type="text" name="x189"> origin.
+81	WHAT WAS YOUR FAVORITE HOME-COOKED MEAL? 
+My favorite home-cooked meal was <input type="text" name="x190"> because it was honestly delicious and <input type="text" name="x191">! It reminds me of <input type="text" name="x192">.
+82	WHAT SNACKS AND SPECIAL TREATS DID YOUR FAMILY ENJOY?  
+Whenever my family and I <input type="text" name="x193"> together, we would always prepare <input type="text" name="x194">. 
+83	WHEN THE FAMILY WENT OUT TO DINNER, WHAT WERE YOUR FAVORITE PLACES TO GO AND YOUR FAVORITE THINGS TO ORDER? 
+We used to go out for dinner frequently/sometimes. When we do, I would always request that we go to <input type="text" name="x195"> or try other restaurants
+that serve <input type="text" name="x196">.
+84	DID YOUR FAMILY OFTEN HAVE COMPANY? 
+(Yes) Our house was a great place for celebrations. I remember having company often. My family’s friends or some of our other relatives
+would always come to visit or <input type="text" name="x197"> with us.
+(No) Although we were a happy family, we did not often have company perhaps because our place was <input type="text" name="x198">.
+85	WHAT WERE YOUR FAMILY HOLIDAY OUTINGS LIKE? Where did you go and what did you do? 
+My family outings were <input type="text" name="x199">! We would always go to <input type="text" name="x200"> and <input type="text" name="x201"> together. Holidays are my <input type="text" name="x202"> favorite season!
+86	WHAT DID YOUR FAMILY DO FOR FUN IN THE WINTER? 
+In the winter, I remember <input type="text" name="x203"> with my siblings/brother/sister. As a whole family, we liked playing <input type="text" name="x204">. My favorite
+winter food was <input type="text" name="x205">. And drinks? Of course, <input type="text" name="x206">. 
+87	DID YOUR FAMILY ATTEND FAMILY REUNIONS? What did you most enjoy about the reunions?  
+Family reunions are <input type="text" name="x207"> for me. I enjoyed <input type="text" name="x208"> whenever we held one. 
+88	DID YOU HAVE CLOSE RELATIONSHIPS WITH ANY OF YOUR AUNTS, UNCLES, OR COUSINS? Why were these relationships important to you?  
+(No) I was not really close to my relatives.
+(Yes) I had close relationships with my other relatives especially with my <input type="text" name="x209">. I am happy about these because I could always
+<input type="text" name="x210"> to them whenever I am <input type="text" name="x211">.
+
+
+
+89	WHAT ARE THE FIRST FEW WORDS THAT COME TO MIND WHEN YOU THINK OF YOUR FAMILY? Why these words? 
+Every time I think about my family, the first thing that comes to mind was <input type="text" name="x212">. I feel like I associated them with it because of
+the <input type="text" name="x213"> they bring to my life. 
+
+
+
+Knowledge is the power that gives us wings to soar. 
+
+
+90	WHERE DID YOU ATTEND ELEMENTARY SCHOOL? How did you travel between school and home?  
+I attended elementary at <input type="text" name="x214"> in <input type="text" name="x215">. I often rode the <input type="text" name="x216"> to  school and back OR I often biked/walked to
+school alone/with my <input type="text" name="x217">.
+
+
+
+91	WHAT ARE YOUR EARLIEST MEMORIES OF ATTENDING SCHOOL?  
+My earliest memories of going to <input type="text" name="x218"> was that I would always <input type="text" name="x219"> in <input type="text" name="x220"> Class. I also remember hanging out
+with my childhood friends named <input type="text" name="x221"> and <input type="text" name="x222">.
+92	WHAT DID YOU ENJOY  MOST ABOUT ELEMENTARY SCHOOL?  
+One thing I loved most about elementary was <input type="text" name="x223"> on <input type="text" name="x224"> days. 
+93	WHAT DID YOU LIKE LEAST?  
+But, I really hated that I had to <input type="text" name="x225">. 
+94	WHERE DID YOU ATTEND MIDDLE SCHOOL? How did you travel there each day? 
+Next, I attended middle school at <input type="text" name="x226">. Every day, I would go there via <input type="text" name="x227">. Sometimes, I would <input type="text" name="x228">.
+95	WHERE DID YOU ATTEND HIGH SCHOOL AND HOW DID YOU TRAVEL THERE EACH DAY?  
+When I was in high school, I attended <input type="text" name="x229">. It was a very <input type="text" name="x230"> school and I met a lot of <input type="text" name="x231"> people there. 
+96	WHAT WERE YOUR FAVORITE SUBJECTS IN MIDDLE SCHOOL AND HIGH SCHOOL? Why?  
+My favorite subjects in middle school were <input type="text" name="x232"> and <input type="text" name="x233"> because <input type="text" name="x234">.
+Meanwhile, in high school, I really liked going to <input type="text" name="x235"> class. The teacher was really <input type="text" name="x236"> and my classmates were
+<input type="text" name="x237">.
+97	WHAT EXTRACURRICULAR ACTIVITIES DID YOU ENJOY MOST? Why did you choose these activities? 
+Some extracurricular activities that I enjoyed the most were <input type="text" name="x238">. I chose these because <input type="text" name="x239">. 
+98	DID YOU RECEIVE ANY SPECIAL AWARDS OR RECOGNITION THROUGHOUT YOUR EDUCATION?  
+Over the years, I have received some special awards such as <input type="text" name="x240">. 
+99	WHO WAS YOUR FAVORITE TEACHER? How did that teacher influence you  
+I had a favorite teacher whose name was <input type="text" name="x241">. I can say that she/he had a big influence on shaping who I am now by <input type="text" name="x242">.
+100	WHAT WERE THE FASHION TRENDS FROM YOUR SCHOOL DAYS? Did you participate in them? Why or why not? 
+Back when I was still in school, there were many fashion trends that arose such as <input type="text" name="x243">.
+(Yes) I participated in them because <input type="text" name="x244">.
+(No) I did not participate much when it comes to these because <input type="text" name="x245">.
+101	WHAT POPULAR SONGS DO YOU REMEMBER? 
+The most popular songs that I remember around the time I was studying were <input type="text" name="x246">. I really <input type="text" name="x247"> this kind of music.
+102	MOVIES?  
+Meanwhile, the highest grossing movies were <input type="text" name="x248">. People <input type="text" name="x249"> these so much!
+103	TELEVISION SHOWS?  
+The television shows that were much awaited were <input type="text" name="x250">.
+104	WHO WERE THE POPULAR CELEBRITIES? 
+Lastly, celebrities such as <input type="text" name="x251"> were having their primes then.
+105	WHAT KIND OF DANCES AND PARTIES DID YOU ATTEND?  
+The parties that I attended were mostly <input type="text" name="x252">. Some of the party-goers were from <input type="text" name="x253">. I can still remember
+how <input type="text" name="x254"> the crowd was. 
+106	IF YOU HAD A CAR DURING YOUR HIGH SCHOOL YEARS, WHAT KIND WAS IT? Were you proud of it?  
+(No) I didn’t have a car when I was in high school but if I did it probably would be a __________.
+(Yes) I had a car when I was a teenager and it was a <input type="text" name="x255">. I was <input type="text" name="x256"> about how it looks like.
+I really went places with that car.
+107	WHAT WAS DIFFICULT ABOUT YOUR MIDDLE SCHOOL AND HIGH SCHOOL YEARS?  
+My middle school and high school years were a bit difficult because of <input type="text" name="x257">. But, as a whole I think I really <input type="text" name="x258">
+my teenage years.
+108	WHAT ARE YOU ESPECIALLY GLAD YOU DID 
+DURING YOUR MIDDLE SCHOOL AND HIGH SCHOOL YEARS? 
+I am happy that I got to <input type="text" name="x259"> while I was schooling. It was a great privilege for me.
+110	WHAT WERE YOUR GOALS AND ASPIRATIONS FOR LIFE AS YOU GRADUATED FROM HIGH SCHOOL? How did these
+change with time?  
+During this time, I was thinking about my goal of becoming a <input type="text" name="x260"> and I really hoped to achieve my dreams such as
+that of <input type="text" name="x261">. Over time, I continued/stopped inching towards these goals.
+111	WHAT PATH DID YOU CHOOSE AFTER GRADUATING FROM HIGH SCHOOL?  
+After graduation, I chose to follow the path of becoming a <input type="text" name="x262">. 
+112	IF YOU ATTENDED A COLLEGE OR A CAREER TRAINING SCHOOL, WHAT DID YOU CHOOSE AS YOUR FIELD OF STUDY?   
+I went to college / a career training school called <input type="text" name="x263"> in the city of <input type="text" name="x264">. I took up a degree in the field of
+<input type="text" name="x265">.
+113	IF YOU MOVED AWAY FROM HOME IN ORDER TO PURSUE YOUR EDUCATION, DESCRIBE THIS EXPERIENCE. 
+I had to move away from home to continue studying and it was <input type="text" name="x266">. I was looking forward to <input type="text" name="x267"> but I really felt
+<input type="text" name="x268"> when I was away from my family.
+114	WHAT WAS YOUR FIRST APARTMENT OR DORM ROOM LIKE?   
+I lived in an apartment/dorm nearby. It was <input type="text" name="x269">, <input type="text" name="x270">, and <input type="text" name="x271">. I had a <input type="text" name="x272"> time studying when I was
+there.
+(with roommate) I had a roommate whose name was <input type="text" name="x273">. He/she was a <input type="text" name="x274"> person.
+115	WHAT ARE SOME OF YOUR FAVORITE COLLEGE MEMORIES? 
+My most favorite college memories were the one at <input type="text" name="x275"> with my <input type="text" name="x276">. Those experiences were <input type="text" name="x277">
+and unforgettable.
+On the Job 
+
+Any job can be made great. It’s the worker—not the work— that counts
+
+116	HOW DID YOU EARN MONEY WHEN YOU WERE YOUNG? What kind of job was it? What did it pay?  
+When I was young, I tried to gain money by <input type="text" name="x278">. My earnings were used to pay for my <input type="text" name="x279">.
+
+
+HINT - PICTURE
+117	WHAT WAS YOUR FIRST CAREER-ORIENTED JOB? What did you do at this job?  
+My first career-oriented job after graduation was a <input type="text" name="x280"> at <input type="text" name="x281">. Here, I would be the one responsible for
+<input type="text" name="x282">.
+118	WHAT WERE YOUR FEELINGS WHEN YOU RECEIVED THIS FIRST JOB? 
+When I found out that I got accepted in this job, I was very <input type="text" name="x283">. I thought that this can help me in <input type="text" name="x284">.
+119	WHAT DID YOU LIKE ABOUT THIS JOB?  
+The one thing I love most about my first job was <input type="text" name="x285">. The environment in the workplace was also <input type="text" name="x286">.
+120	WHAT WAS THE MOST ENJOYABLE JOB YOU EVER HAD? What made it enjoyable? 
+Among the jobs that I tried and had in the past, the one in which I probably had the most fun was when I was working at <input type="text" name="x287">
+as a <input type="text" name="x288">. This is due to the fact that <input type="text" name="x289">.
+
+121	WHAT WAS THE WORST JOB YOU EVER HAD? Why did you dislike it?  
+Meanwhile, the worst job was in <input type="text" name="x290">. I mostly did not enjoy working here because of <input type="text" name="x291">.
+122	WHAT HAS BEEN YOUR MOST REWARDING JOB? In what ways was it rewarding? 
+The most rewarding out of all, however, was the job at <input type="text" name="x292">. This is because I was <input type="text" name="x293">. I really love
+<input type="text" name="x294"> about this job.
+123	HAVE ANY OF YOUR JOBS FORCED YOU TO MOVE? Were you happy about moving?  
+Of course, some opportunities can only be achieved when you move out of your comfort zone. As for me, I had to move away when I
+was working at <input type="text" name="x295"> in <input type="text" name="x296">. I felt <input type="text" name="x297"> because of it but I am <input type="text" name="x298"> that I took it.
+124	HAVE ANY OF YOUR JOBS INVOLVED BUSINESS TRAVEL?  Where was the most memorable place you travelled for your work? 
+For some jobs, I had to go places for <input type="text" name="x299"> events. The most memorable place I visited while doing so was a <input type="text" name="x300"> in <input type="text" name="x301">.
+125	WAS A CO-WORKER OR SUPERIOR EVER A VALUABLE MENTOR TO YOU? What did you learn from that person?  
+I had a coworker / superior who displayed the role of a friendly and trustworthy mentor to me. His/her name was <input type="text" name="x302"> and
+he/she taught me how to <input type="text" name="x303">.
+126	DID YOU EVER MENTOR SOMEONE? Was doing so a good experience for you? 
+(If yes) Over the years, I was able to be a mentor to others, too. I believe it was a <input type="text" name="x304"> experience for me.
+(If no) I might not have been an official mentor to others myself, but I believe that I was also able to help my colleagues in various ways.
+
+127	WHAT SPECIAL FRIENDS DID YOU MAKE AS A RESULT OF YOUR WORK?  
+At work, I met all types of people but I found <input type="text" name="x305"> friends, too. 
+128	WHAT KIND OF WORK DO YOU ENJOY DOING AROUND THE HOUSE?  
+When I’m just at home, I like to work on <input type="text" name="x306">.
+129	WHAT KIND WOULD YOU PREFER TO AVOID? 
+But, I usually avoid doing <input type="text" name="x307"> because <input type="text" name="x308">.
+Love AND Marriage  
+130	When love touches our hearts, happiness fills our days.  
+
+131	WHO WAS YOUR FIRST CRUSH? 
+I remember having a crush on <input type="text" name="x309"> when I was younger. I believe she was the first person I truly admired. 
+132	WHEN DID YOU ATTEND YOUR FIRST BOY/GIRL PARTY?  
+The first boy party that I attended was when I was <input type="text" name="x310"> years old. It was held at <input type="text" name="x311">..
+133	WHAT DO YOU REMEMBER ABOUT YOUR FIRST KISS?  
+My first kiss was <input type="text" name="x312">. I remember how I felt really <input type="text" name="x313"> afterwards. 
+135	WHAT DO YOU REMEMBER ABOUT YOUR FIRST DATE? 
+My first ever date was <input type="text" name="x314">. It went <input type="text" name="x315">. I had a <input type="text" name="x316"> time with <input type="text" name="x317">.
+136	WHAT WAS A TYPICAL DATE LIKE AT THAT TIME?  
+When that happened, lovers usually <input type="text" name="x318"> when they went out together and hung out. The kind of date nights was very <input type="text" name="x319">
+compared to now. 
+137	HOW OLD WERE YOU WHEN YOU MET YOUR WIFE? 
+I met my lovely wife when I was <input type="text" name="x320"> years old.
+
+
+138	HOW DID YOU MEET HER? 
+I will be eternally grateful that our paths crossed on <input type="text" name="x321"> in <input type="text" name="x322">. If it weren’t for the <input type="text" name="x323">,
+I wouldn’t have seen her.
+139	WHAT QUALITIES ATTRACTED YOU TO HER? 
+She was <input type="text" name="x324">, <input type="text" name="x325">, and <input type="text" name="x326">. Those qualities really captured my attention.
+140	WHAT WAS YOUR FIRST IMPRESSION OF HER? How did this impression change with time? 
+Initially, I thought that she was <input type="text" name="x327">. Over time, I realized how <input type="text" name="x328"> my first impression was compared to how
+she really is.
+141	HOW LONG WAS YOUR COURTSHIP?  
+I courted her for <input type="text" name="x329"> months. She was definitely worth the wait.
+142	WHAT DID YOU ENJOY DOING TOGETHER? 
+When we just started dating, we really loved <input type="text" name="x330"> together. Some other things that we enjoyed doing were <input type="text" name="x331">
+and <input type="text" name="x332">.
+143	WHEN DID YOU KNOW THAT SHE WAS “THE ONE”?  How did you know? 
+I knew she was the one when <input type="text" name="x333"> after I realized that she could be <input type="text" name="x334">.
+144	WHAT WAS THE MARRIAGE PROPOSAL LIKE? 
+The marriage proposal was <input type="text" name="x335"> and I am sincerely <input type="text" name="x336"> about it! There were <input type="text" name="x337"> everywhere while I
+was waiting for her response. 
+145	WHAT WAS THE DATE AND PLACE OF THE WEDDING?   
+We officially tied the knot on <input type="text" name="x338"> at a <input type="text" name="x339"> in <input type="text" name="x340">.
+
+
+146	WHAT DID YOU WEAR?  
+I wore a <input type="text" name="x341">.
+
+147	WHAT DID SHE WEAR? 
+While she wore a beautiful and <input type="text" name="x342"> wedding dress/gown. 
+
+148	HOW MANY GUESTS ATTENDED THE WEDDING? 
+It was a small/big wedding. We had about <input type="text" name="x343"> guests.
+
+149	DID YOU HAVE A SPECIAL “FIRST DANCE” SONG? Why did you choose this song?  
+For our first dance as husband and wife, we swayed to the song entitled <input type="text" name="x344"> which was chosen because <input type="text" name="x345">.
+150	WHAT IS YOUR MOST OUTSTANDING MEMORY FROM YOUR WEDDING DAY? 
+The most remarkable memory of mine from that special day was <input type="text" name="x346">.
+
+151	WHERE DID YOU GO ON YOUR HONEYMOON? 
+Recall a special moment or event from the honeymoon. 
+Our honeymoon was <input type="text" name="x347">! We went to <input type="text" name="x348"> wherein we <input type="text" name="x349">. What I loved most about this
+experience was the fact that <input type="text" name="x350">.
+
+
+152	WHERE DID YOU LIVE RIGHT AFTER YOU GOT MARRIED? What do you remember about it most vividly?  
+After getting married, we lived in <input type="text" name="x351">. I clearly remember how <input type="text" name="x352"> our home was.
+
+
+153	DESCRIBE A TYPICAL DINNER AND EVENING DURING YOUR EARLY MARRIAGE.   
+Early into our marriage, we had <input type="text" name="x353"> nights where we would enjoy dinner together over a <input type="text" name="x354">.
+154	WHEN DID YOU START THINKING ABOUT HAVING CHILDREN? What about having children did you look forward to most? 
+We started thinking about having children when <input type="text" name="x355">. I really looked forward to <input type="text" name="x356"> and seeing my wife
+<input type="text" name="x357"> for our kids.
+
+
+155	WHO WERE SOME OF YOUR CLOSEST FRIENDS 
+WHEN YOU WERE FIRST MARRIED? What were some of the fun things you did with them? 
+As a couple, we had some close friends. The ones that we mostly hung out with were named <input type="text" name="x358">.
+We would always <input type="text" name="x359"> together and it felt <input type="text" name="x360">! I <input type="text" name="x361"> spending time with them.
+
+
+157	WHAT LEISURE ACTIVITIES OR ENTERTAINMENTS DID YOU AND YOUR WIFE ENJOY? 
+<input type="text" name="x362"> and I really loved <input type="text" name="x363"> whenever we had free time. Aside from this, we also enjoyed <input type="text" name="x364">.
+158	WHAT HAVE YOU FOUND MOST REWARDING ABOUT MARRIAGE?  
+For me, marriage has been rewarding because <input type="text" name="x365">.
+159	WHAT DO YOU THINK IS MOST IMPORTANT IN MAINTAINING A HEALTHY MARRIAGE?  
+ To be able to withstand any hardship, I believe that the most important key to a healthy marriage is <input type="text" name="x366">.
+160	HAS THERE BEEN AN EVENT IN YOUR MARRIAGE WHEN SHARING AND PARTNERSHIP WAS PARTICULARLY
+IMPORTANT? 
+Of course in our marriage we also had hard times wherein we needed to be there for each other more. These instances that required
+sharing and companionship happened when <input type="text" name="x367">.
+161	WHAT DO YOU VALUE ABOUT THE DAY-TO-DAY RELATIONSHIP THAT YOU AND YOUR WIFE SHARE NOW?  
+My daily relationship with my loving wife has been <input type="text" name="x368">. Right now, my favorite thing about being married to _______
+is <input type="text" name="x369">.
+Parenting  
+To be a father is to protect, nurture, and guide, but most of all, to love.  
+
+
+162	HOW DID YOU FEEL WHEN YOU FIRST LEARNED THAT YOU WERE TO BECOME A FATHER? 
+When I found out that I was going to be a dad, I felt <input type="text" name="x370">. I remember that day being a <input type="text" name="x371">
+one.
+163	WHERE DID YOU LIVE ?<input type="text" name="x372">
+WHEN YOUR FIRST CHILD WAS BORN?  <input type="text" name="x373">
+My growing family then lived at a <input type="text" name="x374"> in <input type="text" name="x375">. 
+
+
+165	DESCRIBE YOUR CIRCUMSTANCES AT THAT TIME. 
+Back then, our situation was <input type="text" name="x376">.
+We had problems such as <input type="text" name="x377"> OR We did not have any problems. 
+
+
+166	WHAT WERE YOUR STRONGEST FEELINGS  WHEN YOU FIRST HAD A NEWBORN AT HOME? 
+Every time I looked at my firstborn when he/she was an infant, I felt <input type="text" name="x378">. Every day with him/her was really
+<input type="text" name="x379">.
+
+
+167	HOW DID BECOMING A FATHER CHANGE YOUR OUTLOOK ON LIFE?  
+Becoming a father was <input type="text" name="x380">. It caused me to have a more <input type="text" name="x381"> outlook on life. I realized that <input type="text" name="x382">.
+168	WHAT IS YOUR MOST VIVID MEMORY OF YOUR CHILDREN’S EARLY YEARS?  
+I have some crystal clear memories of my children when they were still young. These include the time when <input type="text" name="x383"> and
+also that instance when <input type="text" name="x384">.
+
+
+169	WHAT ACTIVITIES DID YOU MOST ENJOY WITH YOUR CHILDREN WHEN THEY WERE YOUNG? 
+Back then, I really enjoyed <input type="text" name="x386"> with them. When they grew up a bit, we would always <input type="text" name="x385">.
+170	WHAT DID YOU AND YOUR WIFE DO FOR CHILD-FREE ENTERTAINMENT AT THAT TIME? 
+Of course, there had to be some days that I would need to spend alone with my wife. Whenever we took the days off for our special dates,
+we would <input type="text" name="x387">.
+
+171	WHAT SIMILARITIES DO YOU SEE BETWEEN YOURSELF AND YOUR CHILDREN?  
+As a parent, I believe that it is undeniable that I have similarities with my kids. These include <input type="text" name="x388">.
+172	WHAT SIMILARITIES DO YOU SEE AMONG YOUR CHILDREN?  
+As for them, my kids are similar in a way that they are all <input type="text" name="x389">. This might be because <input type="text" name="x390">.
+173	WHAT VALUES DID YOU TRY TO NURTURE IN YOUR CHILDREN? 
+My spouse and I tried to instill the qualities of being <input type="text" name="x391">, <input type="text" name="x392">, and <input type="text" name="x393"> to our kids.
+174	WHAT HAS BEEN YOUR GREATEST JOY IN BEING A FATHER?  
+I know that I have been blessed to be a father because I get to experience <input type="text" name="x394">. This is what I consider my greatest joy
+in this <input type="text" name="x395"> role.
+175	WHAT HAS BEEN THE GREATEST CHALLENGE? 
+Because life is not perfect, our family had problems, too. The greatest challenge that I experienced as a dad to <input type="text" name="x396"> beautiful kids
+was <input type="text" name="x397">.
+176	HOW HAS YOUR CHILDREN’S UPBRINGING BEEN DIFFERENT FROM OR SIMILAR TO YOUR OWN?  
+I was raised in a <input type="text" name="x398"> family which is similar/different to my children’s upbringing. They grew up in a <input type="text" name="x399"> house, a
+<input type="text" name="x400"> neighborhood, with <input type="text" name="x401"> parents.
+177	IS THERE ANYTHING YOU KNOW NOW 
+THAT YOU WISH YOU’D KNOWN WHEN YOU FIRST BECAME A FATHER?  
+Sometimes, I wish that I knew better when I became a father to my firstborn. One thing that I learned through time that I could
+have known back when I was raising <input type="text" name="x402"> was <input type="text" name="x403">.
+179	WHAT ARE THE THINGS YOU HOPE  YOUR CHILDREN HAVE LEARNED FROM YOU?  
+I am a <input type="text" name="x404"> person. Somehow I wish my kids can grow up to be <input type="text" name="x405"> -- opposite/similar to me. 
+180	 WHAT IS THE MOST IMPORTANT THING YOU’VE LEARNED FROM BEING A FATHER? 
+Being a father taught me a lot of <input type="text" name="x406"> lessons but to me the most important thing among all these is <input type="text" name="x407">.
+This is due to the fact that <input type="text" name="x408">.
+
+
+Life offers so many wonderful things to share, so many special joys to celebrate.  
+
+181	HOW WAS YOUR BIRTHDAY CELEBRATED WHEN YOU WERE YOUNG?   
+We would always <input type="text" name="x409"> on my birthday when I was young. The guests were usually <input type="text" name="x410">. It was a <input type="text" name="x411">
+celebration.
+
+
+182	WHAT IS YOUR FONDEST MEMORY OF A BIRTHDAY CELEBRATION? 
+My favorite memory of a birthday party was when <input type="text" name="x412">. This happened on  my <input type="text" name="x413"> th birthday.
+183	DO YOU REMEMBER PARTICULARLY SPECIAL BIRTHDAY GIFTS YOU RECEIVED? What made them so special?  
+The most special presents that I ever received are <input type="text" name="x414">. For me, they were wonderful because <input type="text" name="x415">.
+184	DID YOU REQUEST ANY SPECIAL MEALS OR DESSERTS ON YOUR BIRTHDAYS? 
+I often requested that my parents cook/make/buy <input type="text" name="x416"> to serve on my birthdays. I really loved these food because
+<input type="text" name="x417">.
+185	DID YOU EVER HAVE A THEME PARTY OR OTHERWISE UNIQUE CELEBRATION? If yes, describe it.  
+Apart from the celebration of my birth, I had other unique parties held at our humble abode. These include <input type="text" name="x418">.
+The ambiance of the surroundings during this feast was <input type="text" name="x419">. Guests had to wear <input type="text" name="x420">. 
+186	HOW DID YOU CELEBRATE CHRISTMAS OR RELIGIOUS FESTIVITIES AS A CHILD? 
+As a child, my favorite religious festivity is <input type="text" name="x421">. We would <input type="text" name="x422"> together as a family and <input type="text" name="x423">.
+We prepare meals such as <input type="text" name="x424"> to feast on. 
+187	WHAT CHILDHOOD CHRISTMAS OR RELIGIOUS FESTIVITIES STANDS OUT THE MOST IN YOUR MEMORY? 
+Among these types of celebrations, the main thing that stands out in my memory is <input type="text" name="x425"> due to the fact that
+<input type="text" name="x426">.
+
+188	WHAT WAS YOUR FAVORITE CHRISTMAS/ RELIGIOUS FOOD DURING YOUR CHILDHOOD?  
+I really liked the <input type="text" name="x427"> that we buy/make during my childhood. It tasted <input type="text" name="x428"> and <input type="text" name="x429">.
+189	WHAT WAS YOUR FAVORITE CHRISTMAS CAROL? Is it still your favourite?  
+My favorite christmas carol was <input type="text" name="x420">. Right now, <input type="text" name="x431"> is my favorite. 
+190	DID YOU HAVE A SPECIAL CHRISTMAS STOCKING OR ORNAMENT WHEN YOU WERE A CHILD? Do you know 
+where it came from?  
+What my family told us about Santa Claus was that he was/wasn’t real. I always knew/didn’t know where the gifts from my Christmas
+stocking / ornament came from. 
+191	DESCRIBE AN ESPECIALLY MEMORABLE CHRISTMAS/RELIGIOUS GIFT YOU RECEIVED. Who was it from? 
+During these holidays, we often gave presents to each other. My most loved gift was the <input type="text" name="x432"> from my <input type="text" name="x433">
+because <input type="text" name="x434">.
+192	DESCRIBE AN ESPECIALLY MEMORABLE CHRISTMAS GIFT YOU GAVE. Who was it for?  
+Meanwhile, the most memorable present that I gave someone was a <input type="text" name="x435">. This was for my <input type="text" name="x436">.
+I still remember how he/she <input type="text" name="x437"> it.
+193	WHAT CHRISTMAS TRADITIONS FROM YOUR CHILDHOOD DID YOU PASS ON TO YOUR CHILDREN? 
+Growing up, I always loved the religious tradition we had in our family. Now that I have my own, I continued to <input type="text" name="x438">.
+194	WHAT HAS BEEN THE MOST MEANINGFUL  CHRISTMAS FOR YOU AS A PARENT? 
+As a parent, the most meaningful Christmas for me was when <input type="text" name="x439"> because <input type="text" name="x440">.
+195	HOW DID YOU CELEBRATE THANKSGIVING? Did you have a favourite Thanksgiving tradition?  
+For Thanksgiving, my family usually <input type="text" name="x441">. The tradition that I love most is <input type="text" name="x442">.
+Preparing and eating Thanksgiving food is also <input type="text" name="x443">.
+196	HOW DID YOU CELEBRATE A TYPICAL  AUSTRALIA DAY AS A CHILD?
+When I was a kid, I really <input type="text" name="x444"> Australia day. The neighborhood would always be <input type="text" name="x445"> and there were <input type="text" name="x446">
+everywhere! 
+197	DID YOU ENJOY DRESSING UP FOR HALLOWEEN TO TRICK-OR-TREAT? Do you remember an especially fun costume? 
+What was your favourite Halloween treat?  
+I did/didn’t really enjoy halloween. I remember an especially fun costume worn by <input type="text" name="x447">. It was a <input type="text" name="x448">.
+I also <input type="text" name="x449"> to trick-or-treat! My favorite treat was <input type="text" name="x450"> since <input type="text" name="x451">.
+198	WHAT IS A PARTICULARLY MEANINGFUL MEMORY FROM A HOLIDAY CELEBRATION?
+One memory that I have of a really enjoyable holiday celebration was when <input type="text" name="x452">.
+It happened around the time that <input type="text" name="x453">.
+I think it was a meaningful experience for me because <input type="text" name="x454">.
+
+
+Moment by moment, day by day, families create a lifetime of memories.  
+
+199	WHAT WAS THE HAPPIEST TIME OF YOUR LIFE? 
+The happiest time of my life, I must say, is when <input type="text" name="x455">. I cannot explain the joy that I felt because <input type="text" name="x456">.
+To me, it’s an experience that cannot be beaten by anything else.
+HINT- PICTURE
+200	WHAT WAS THE SADDEST? 
+Meanwhile, the saddest for me was when <input type="text" name="x457">. I believe I had a <input type="text" name="x458"> time moving on from this
+because <input type="text" name="x459">.
+
+201	WHAT WAS THE BUSIEST TIME OF YOUR LIFE?  
+Over the years, I had many commitments and responsibilities but there was a time wherein I was always occupied.
+The busiest I have ever been was when <input type="text" name="x460">. It was due to the fact that <input type="text" name="x461">.
+202	WHAT WAS THE MOST RELAXED? 
+On the other hand, I had relaxing days, too, but I am confident to say that I was most comfortable and at ease when
+<input type="text" name="x462">.
+203	WHAT EVENT WOULD YOU SAY HAS PARTICULARLY IMPACTED YOUR LIFE?  
+A life-changing event that really influenced me in many ways was when <input type="text" name="x463">. Somehow, it helped me
+<input type="text" name="x464">.
+204	HAS THERE BEEN A POLITICAL EVENT IN YOUR LIFETIME THAT MADE A STRONG IMPRESSION ON YOU?
+One political event that I participated in or witnessed over the years was <input type="text" name="x465">. It made a really strong
+impression on for the reason that <input type="text" name="x466">.
+205	HAVE YOU OR OTHER FAMILY MEMBERS SERVED IN THE MILITARY? What are your feelings about this?  
+(I have) I served in the military back then. It was a <input type="text" name="x467"> experience, while at the same time, there were instances that <input type="text" name="x468"> me
+such as <input type="text" name="x469">.
+(Other family members have) Some of my relatives had to serve in the military. I was really <input type="text" name="x470"> about it and it
+often <input type="text" name="x471"> me thinking about what was happening to them while in there.
+206	WHAT HAVE YOU DONE IN YOUR LIFE THAT YOU ARE ESPECIALLY PROUD OF? 
+I can proudly say that I was able to <input type="text" name="x472">. This had been fulfilling for me because <input type="text" name="x473">.
+207	HAVE YOU EVER BEEN IN AN ACCIDENT, HAD MAJOR SURGERY, OR A LONG ILLNESS?
+I have been in an accident/major surgery/long illness. This involved me being <input type="text" name="x474">.
+It sincerely didn’t have / had a lasting effect on me because it made me <input type="text" name="x475">.
+208	 DID TRAGEDY EVER OCCUR IN YOUR FAMILY OR WITH A LOVED ONE? How did you respond to it?  
+My family experienced a tragic time when <input type="text" name="x476"> happened. I have always been a <input type="text" name="x477"> person and although I was
+<input type="text" name="x478">, I made sure that I would still be able to <input type="text" name="x479">.
+209	WHAT WAS THE MOST DIFFICULT CHOICE 
+YOU HAD TO MAKE IN YOUR LIFE? HAD TO MAKE IN YOUR LIFE? Would you make the same choice again?  
+The most difficult choice that I made was <input type="text" name="x480">. I do not regret / regret it until now and if I would be given a chance to
+choose a different option, I would <input type="text" name="x481">.
+
+211	DESCRIBE YOUR MOST MEMORABLE TRAVEL EXPERIENCE.  
+Throughout the years, I really didn’t travel much / went to a lot of places but the most memorable experience I had while traveling was
+when I went to <input type="text" name="x482"> alone / with <input type="text" name="x483">. There, I / we did activities such as <input type="text" name="x484">.
+
+
+212	WHEN DID YOU TAKE YOUR FIRST AIRPLANE TRIP? Where did you go? 
+The first time I rode an airplane was when I was off to <input type="text" name="x485"> when I was <input type="text" name="x486"> years old. I had to go there because of
+<input type="text" name="x487">.
+
+
+213	DID YOU EVER TRAVEL ABROAD? What was your reaction? 
+(No) I did not get the chance to travel abroad but I bet I would love to see <input type="text" name="x488">.
+(Yes) I had the opportunity of traveling abroad and it was <input type="text" name="x489">! I enjoyed <input type="text" name="x490"> because <input type="text" name="x491">.
+
+
+214	WHAT IS THE MOST FUN, INTERESTING, OR EXCITING PLACE YOU’VE EVER VISITED? What made it so?  
+Among all the tourist spots and vacation places that I have been to, I can say that the most interesting and exciting was when I went
+to <input type="text" name="x492">. It was special because <input type="text" name="x493">.
+215	 HAVE YOU EVER HELPED SOMEONE IN NEED? If so, How?  
+I <input type="text" name="x494"> helping people because I believe that <input type="text" name="x495">. One person that I extended my helping hands to was named <input type="text" name="x496">.
+He/she needed assistance in <input type="text" name="x497"> so I <input type="text" name="x498">.
+216	HAVE YOU EVER DEDICATED YOURSELF TO A CAUSE OR ORGANIZATION? Why was it important to you? 
+I also dedicated myself to a cause / organization for the <input type="text" name="x499">. I participated in it with an open heart because <input type="text" name="x500">.
+217	 DID YOU EVER PLAY ON A SPORTS TEAM OR PARTICIPATE IN ANOTHER COMPETITIVE ACTIVITY? 
+How did you benefit from it? 
+I was also given the chance to join competitive activities like <input type="text" name="x501"> which helped me grow in a way that <input type="text" name="x502">.
+218	 HAVE YOU EVER RECEIVED PROFESSIONAL RECOGNITION? If so, for what? How did it make you feel? 
+Being on earth for <input type="text" name="x503"> years is a lot of work and over the years I did many <input type="text" name="x504"> things. Thankfully, my efforts were
+professionally recognized when I <input type="text" name="x505">. Upon receiving my award, I felt <input type="text" name="x506">.
+219	 WHAT DO YOU REGARD AS THE MOST IMPORTANT INVENTION IN YOUR LIFETIME? How did it affect you? 
+The most important invention in my lifetime was <input type="text" name="x507">. I will be eternally grateful that it existed because
+<input type="text" name="x508">. 
+220	WHAT DO YOU SEE AS THE MOST IMPORTANT POLITICAL OR INTERNATIONAL EVENTS OF YOUR LIFETIME? 
+Some of the most remarkable political / international events that I witnessed or participated in while I am living were <input type="text" name="x509">.
+These were memorable because <input type="text" name="x510">.
+221	WHAT SCIENTIFIC DISCOVERIES OR ADVANCES HAVE INTERESTED YOU THE MOST?  
+Science has always <input type="text" name="x511"> me but, in particular, <input type="text" name="x512"> piqued my interest.
+222	IN WHAT WAYS DO YOU THINK SOCIETY HAS CHANGED THE MOST SINCE YOUR YOUTH?   
+Growing up to be who I am today and comparing my upbringing to the youth of the current times, I can say that we are very
+similar / different in ways such as <input type="text" name="x513">. This might be due to the fact that <input type="text" name="x514"> nowadays
+compared to back then.
+223	WHAT IS ONE THING YOU WOULD NEVER CHANGE ABOUT THE WAY YOU’VE LIVED YOUR LIFE? 
+Even though I was <input type="text" name="x515">, I don’t think I would want to change that about how I lived my life even if I would be given a chance to do
+so.
+224	WHAT IS ONE THING YOU WISH YOU HAD DONE DIFFERENTLY IN YOUR LIFE? Why? 
+Although, I guess I would have changed <input type="text" name="x516"> because <input type="text" name="x517">.
+225	WHAT ARE YOUR HOPES FOR YOURSELF AND YOUR FAMILY IN THE NEXT TEN YEARS? 
+In the next ten years, I wish my family will become <input type="text" name="x518"> so that <input type="text" name="x519">.
+226	WHAT ARE YOUR HOPES FOR NATIONAL OR WORLD EVENTS?
+For the world to be a better and happier place however, I hope that <input type="text" name="x520"> will change and <input type="text" name="x521">
+can be more <input type="text" name="x522">.
+Inspiration  How great it is to have the freedom to dream and the opportunity to make those dreams come true. 
+
+227	WHAT PEOPLE HAVE MADE THE GREATEST IMPACT ON YOUR LIFE? How?  
+The people I would like to thank for helping me be the person I am today are <input type="text" name="x523">. They helped me
+<input type="text" name="x524">.
+228	WHO HAVE YOU TURNED TO MOST OFTEN FOR ADVICE OR GUIDANCE?   
+Whenever I needed help, I would always approach <input type="text" name="x525"> and he/she always had the answers that could make me <input type="text" name="x526">.
+229	DOES RELIGION PLAY A SIGNIFICANT ROLE IN YOUR LIFE? 
+(No) Religion did not really play a significant role in my life.
+(Yes) Religion helped me be a <input type="text" name="x527"> person. I relied on my faith every time I <input type="text" name="x528">.
+230	IS THERE A POEM, PASSAGE, OR QUOTE THAT HAS BEEN MEANINGFUL IN YOUR LIFE? Why is it important to you? 
+A poem/passage/quote that I learned to live by or admired sincerely was <input type="text" name="x529"> by <input type="text" name="x530">. This is due to the fact that
+<input type="text" name="x531">.
+231	 IF YOU COULD KEEP ONLY ONE FAMILY PHOTO, WHICH WOULD IT BE? Why? 
+If worst comes to worst and I am only allowed to keep a single family photo, it would be that of <input type="text" name="x532">. This is <input type="text" name="x533">
+for me because it reminds me of <input type="text" name="x534">.
+232	WHAT IS YOUR MOST TREASURED POSSESSION? Why is it of value?  
+Perhaps, the greatest possession that I have is my <input type="text" name="x535">. It is unbeatable by any other because <input type="text" name="x536">.
+233	WHAT DO YOU CONSIDER TO BE YOUR LIFE’S GREATEST GIFTS?   
+The greatest gifts in my life are <input type="text" name="x537">. I will forever be grateful for these.
+234	HAVE YOU EVER FELT THAT YOU HAD A SPECIAL CALLING? 
+(No) I never felt that I was born to become someone.
+(Yes) I have always felt that I was born to be <input type="text" name="x538"> -- that I was called to <input type="text" name="x539">.
+235	WHO WERE YOUR ROLE MODELS WHEN YOU WERE YOUNG?   
+Back when I was little, I looked up to <input type="text" name="x540"> the most because <input type="text" name="x541">. Somehow, I grew up to be
+closely similar to/different from them. 
+236	DID YOU PARTICULARLY ADMIRE A FAMOUS PERSON? What made this person admirable? 
+A celebrity that I admired was <input type="text" name="x542"> because of his/her <input type="text" name="x543">. 
+237	HAVE YOU EVER LISTENED TO A PUBLIC SPEAKER WHO MADE A BIG IMPRESSION ON YOU? 
+If not, who would you like to hear and why?  
+(No) I have never been able to listen to a public speaker but if I would be given the chance, I want to hear <input type="text" name="x544"> because he/she
+<input type="text" name="x545">.
+(Yes) I was able to witness <input type="text" name="x546"> speaking live and it greatly impacted me in a way that <input type="text" name="x547">.
+
+238	IS THERE AN AUTHOR OR BOOK THAT HAS INFLUENCED YOU IN A UNIQUE WAY? 
+What are some of the insights that you’ve received?  
+One book that has always made a big impression on me was <input type="text" name="x548"> by <input type="text" name="x549">. I loved this author’s works because
+they taught me that <input type="text" name="x550">.
+239	WHAT VALUABLE ADVICE DID YOU RECEIVE FROM AN ADULT WHEN YOU WERE YOUNG? What were the circumstances?  
+When I was young, I was told by <input type="text" name="x551"> that I should <input type="text" name="x552">. They taught me this lesson
+when I was  <input type="text" name="x553">.
+240	WHAT INSIGHTS CAN YOU SHARE ABOUT WORKING WELL WITH OTHERS?   
+To be able to work well with other people, one should be <input type="text" name="x554">. It requires <input type="text" name="x555"> to build a lasting relationship.
+241	HOW WOULD YOU DESCRIBE SUCCESS?  
+Success is something that <input type="text" name="x556">. It does not <input type="text" name="x557"> and it is not <input type="text" name="x558">.
+242	WHAT DO YOU FEEL IS “THE SECRET TO SUCCESS”?  
+The secret to it would be <input type="text" name="x559">. That is what I realized in my life on earth.
+243	WHAT DO YOU THINK ARE THE IMPORTANT
+CHARACTERISTICS OF A GOOD FRIEND?  
+One can only be considered a good friend if they are <input type="text" name="x560">, <input type="text" name="x561">, and <input type="text" name="x562">. If not, then there must be
+<input type="text" name="x563">.
+245	WHAT DO YOU VALUE MOST ABOUT YOUR FAMILY? 
+What I value most about my family is the fact that <input type="text" name="x564">. Even though there are hardships,
+we <input type="text" name="x565"> together.
+
+
+246	WHAT IS THE MOST IMPORTANT LESSON YOU HAVE LEARNED ABOUT LIFE? 
+My life on earth has been emotionally <input type="text" name="x566">, physically <input type="text" name="x567">, and wholly <input type="text" name="x568">. People have come
+and gone, seasons have changed countless times, and days have been numbered one by one. The single most important lesson I’ve
+learned in this <input type="text" name="x569"> world is that <input type="text" name="x570">.
+247	WHAT ADVICE ABOUT LIFE WOULD YOU LIKE YOUR FAMILY TO REMEMBER?  
+The greatest advice I can give right now is that <input type="text" name="x571">. I am hoping that people will listen and that my family
+will deem this as unforgettable and <input type="text" name="x572">.
+PLEASE RECORD ANY OTHER INFORMATION YOU WISH TO SHARE
+
+HINT- PICTURE
+
+Questions about COVID:
+1. How have you spent the time when you have been in lockdown in 2020
+The pandemic of 2020 due to the novel coronavirus outbreak has been really ________________. I spent my days in lockdown doing
+____________________. I think I _____________ this time yet I learned lessons such as _______________.
+2. How has it affected your state of mind
+It has affected my state of mind in a way that _________________. It was emotionally ________________ because _____________.
+3. What coping techniques have you been practicing in 2020
+Fortunately, I was able to adapt and develop some coping mechanisms that helped me __________________. These include
+___________ and ____________.
+<br> <br>
+<button type="submit" class="btn btn-primary" style="text-align: center;">Create My Story</button>
+</form>
+
+{% endblock main_content %}
